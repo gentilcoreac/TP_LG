@@ -121,7 +121,8 @@
       <thead>
       <tr>
         <th>ID</th>
-        <th>Persona</th>
+        <th>ID Per</th>
+        <th>Persona</th>        
         <th>ID Elem</th>
         <th>Elemento</th>
         <th>Desde</th>
@@ -137,7 +138,8 @@
 		%>
 		<tr>
 			<td><%=r.getId_reserva() %></td>
-			<td><%=r.getPersona().getUsuario() %></td>
+			<td><%=r.getPersona().getId() %></td>
+			<td><%=r.getPersona().getUsuario() %></td>			
 			<td><%=r.getElemento().getId_elemento() %></td>
 			<td><%=r.getElemento().getNombre() %></td>
 			<td><%=r.getFecha_hora_desde_solicitada() %></td>

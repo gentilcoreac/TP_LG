@@ -33,7 +33,7 @@
     </div>    
     <div class="form-group">
       <label for="inputpersona">Persona:</label>
-      <input name="persona" type="text" class="form-control" id="inputpersona" required  readonly="readonly" value="<%=res.getPersona().getUsuario() %>" >
+      <input name="persona" type="text" class="form-control" id="inputpersona" required  readonly="readonly" value="<%=res.getPersona().getId() %>" >
     </div>
     <div class="form-group">
       <label for="inputidelemento">ID Elemento:</label>

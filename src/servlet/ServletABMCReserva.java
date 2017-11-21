@@ -131,17 +131,17 @@ public class ServletABMCReserva extends HttpServlet {
 			res.setId_reserva(Integer.parseInt(request.getParameter("id_reserva")));
 			
 			Persona per = new Persona();
-			per.setId(Integer.parseInt(request.getParameter("id_persona")));
+			per.setId(Integer.parseInt(request.getParameter("persona")));
 			res.setPersona(per);
 			Elemento ele = new Elemento();
 			ele.setId_elemento(Integer.parseInt(request.getParameter("id_elemento")));
 			res.setElemento(ele);
-/*
+
 			String fechaHoraE = request.getParameter("resentregado");
-			SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+			SimpleDateFormat formatter = new SimpleDateFormat("yyyy-mm-dd HH:MM:SS");   //"yyyy-mm-dd HH:mm:ss"
 			formatter.setLenient(false);		
 			res.setFecha_hora_entregado(formatter.parse(fechaHoraE));
-			*/
+		
 			
 			//res.setFecha_hora_entregado(request.getParameter("resentregado"));
 			 
